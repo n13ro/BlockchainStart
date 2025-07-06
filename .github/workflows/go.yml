@@ -25,10 +25,10 @@ jobs:
       run: go mod tidy
 
     - name: Build
-      run: go build -v main.go
+      run: go build -v main.go .
 
     - name: Test
       run: go test -v main.go
       
     - name: Run
-      run: ./main.exe
+      run: ./main
